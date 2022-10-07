@@ -1,0 +1,102 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP4pD+L4/1QS8HTZzQHAckt",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/anmolbrian/Learning-python/blob/main/assignment%202\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "vzka44Y7jH4p"
+      },
+      "outputs": [],
+      "source": [
+        "# Write a python programe to check if a number is prime or not"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#@title Default title text\n",
+        "def check(n, div = None):\n",
+        "    if div is None:\n",
+        "        div = n - 1\n",
+        "    while div >= 2:\n",
+        "        if n % div == 0:\n",
+        "            print(\"Number not prime\")\n",
+        "            return False\n",
+        "        else:\n",
+        "            return check(n, div-1)\n",
+        "    else:\n",
+        "        print(\"Number is prime\")\n",
+        "        return 'True'\n",
+        "n=int(input(\"Enter number: \"))\n",
+        "check(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 70
+        },
+        "id": "6xstfiLnCDtf",
+        "outputId": "33ccdfde-106d-4521-c835-216d03316bb5"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter number: 2\n",
+            "Number is prime\n"
+          ]
+        },
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "'True'"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "string"
+            }
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "-G5g1S3qDOjn"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
